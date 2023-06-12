@@ -104,5 +104,5 @@ Moralis.start({
   });
 });
 
-// Export the Express API
+// Export Express API
 module.exports = app;

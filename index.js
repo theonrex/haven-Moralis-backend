@@ -103,3 +103,6 @@ Moralis.start({
     console.log(`Listening for API Calls`);
   });
 });
+
+// Export the Express API
+module.exports = app;

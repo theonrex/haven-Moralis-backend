@@ -9,7 +9,7 @@ require("dotenv").config({ path: ".env" });
 app.use(cors());
 app.use(express.json());
 
-const MORALIS_API_KEY = process.env.MORALIS_API_KEY;
+const MORALIS_API_KEY = process.env.NEXT_PUBIC_MORALIS_API_KEY;
 
 app.get("/getwalletbalance", async (req, res) => {
   try {

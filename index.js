@@ -9,7 +9,7 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
-const MORALIS_API_KEY = process.env.MORALIS_API_KEY;
+const NEXT_PUBLIC_API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
 app.get("/getwalletbalance", async (req, res) => {
   try {
@@ -97,7 +97,7 @@ app.get("/createstream", async (req, res) => {
 });
 
 Moralis.start({
-  apiKey: MORALIS_API_KEY,
+  apiKey: NEXT_PUBLIC_API_KEY,
 }).then(() => {
   app.listen(port, () => {
     console.log(`Listening for API Calls`);
